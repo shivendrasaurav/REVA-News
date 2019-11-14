@@ -10,6 +10,12 @@
         <link href="https://shivendrasaurav.github.io/Fluent-Design-For-Web/Icons/css/icons.css" type="text/css" rel="stylesheet">
         <link href="customstyles.css" type="text/css" rel="stylesheet">
 
+        <script>
+            function checkid(){
+                console.log("Hello World");
+            }
+        </script>
+
     </head>
     <body>
 
@@ -17,7 +23,7 @@
             <form method="post" action="create_story.php" enctype="multipart/form-data">
                 <h4><img src="logo_reva.png" style="width: 50px; height: 50px; margin: -10px; margin-left: 5px;"/>&nbsp;&nbsp;Upload Your Article</h4><br>
                 <label>Unique ID</label><br>
-                <input type="text" name="id" placeholder="Employee ID">
+                <input type="text" name="id" placeholder="Employee ID" onkeydown="checkid();">
                 <br><br>
                 <label>Name</label><br>
                 <input type="text" name="name" placeholder="Name">
