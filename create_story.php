@@ -64,8 +64,8 @@ fclose($myfile);
 */
 
 $text = "
-<div class='zi2 column large3 medium3 small12 left' style='margin: 10px;'>
-<a class='tab' href='./{$page_title}_{$page_name}_{$date}.html'>
+<div class='zi2 column large4 medium4 small12' style='margin-bottom: 16px;'>
+<a class='tab' href='articles/{$page_title}_{$page_name}_{$date}.html'>
     <div>
         <img class='thumb' src='{$file_path}'>
         <br><br>
@@ -107,24 +107,32 @@ fseek($file,$back,SEEK_END);
 fwrite($file,$modstring);
 fclose($file);
 
-(string)$file_path = "./img_upload/".$file_name;
+(string)$file_path = "../img_upload/".$file_name;
 
 $text = "
 <head>
 <title>REVA News</title>
-<meta name='viewport' content='width=device-width, initial-scale='1.0'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <script src='https://fluentdesignforweb.github.io/fluent.js'></script>
 <link href='https://fluentdesignforweb.github.io/fluent.css' type='text/css' rel='stylesheet'>
-<link href='https://shivendrasaurav.github.io/Fluent-Design-For-Web/Icons/css/icons.css' type='text/css' rel='stylesheet'>
-<link href='customstyles.css' type='text/css' rel='stylesheet'>
+<link href='https://shivendrasaurav.github.io/Fluent-Design-For-Web/Icons/css/fluent-icons.css' type='text/css' rel='stylesheet'>
+<link href='../customstyles.css' type='text/css' rel='stylesheet'>
 </head>
 <body>
-    <div class='column large10 medium0 small0 page_container center zi2'>
-        <div class='pivot_container'>
-            <img src='logo_reva.png' style='width: 40px; height: 40px; margin: -10px; margin-left: 5px;'/>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span style='color: #000; font-size: 28px;'>REVA News</span>
-        </div>
+    <div id='body'>
+    <div class='primary_inverted column large10 medium10 small12 center zi2'>
+
+    <a class='pivot_button' style='font-size: 28px;' href='../index.php'>
+        <img src='../logo_reva.png' style='width: 40px; height: 40px; margin: -10px; margin-left: 5px;'/>
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;REVA NEWS-->
+    </a>
+    <button class='pivot_button right' onclick='openside1();'>
+        <i class='ms-Icon ms-Icon--GlobalNavButton' aria-hidden='true' style='font-size: 16px;'></i>
+    </button>
+
     </div>
+    <br><br><br><br>
+    
     <div class='page_container column large10 center'>
         <h3>{$title}</h3>
         <br>
@@ -134,11 +142,44 @@ $text = "
         <br>
         <p>{$content}</p>
     </div>
+    <br><br>
+    <div class='primary_inverted column large10 medium10 small12 center'>
+        
+        <br>
+        <div class='column large6 medium6 small12'>
+            <a href='https://reva.edu.in/' style='color: #FFF'>REVA University</a><br>
+            <a href='https://race.reva.edu.in/' style='color: #FFF'>REVA Academy for Corporate Excellence</a><br>
+        </div>
+                    
+        <div class='column large6 medium6 small12'>
+            <a href='../aboutus.html' style='color: #FFF'>About REVA News</a><br>
+            <a href='../contact.html' style='color: #FFF'>Contact REVA News</a><br>
+        </div>
+
+        <hr>
+        <span>This website is built on <a style='color: #FFF;' href='https://fluentdesignforweb.github.io'>Fluent Design For Web</a></span>
+        <span class='right'>&copy; REVA News 2019</span>
+        
+        <br><br>
+
+    </div>
+    </div>
+
+    <div class='sidepanel_container' id='side1'>
+        <div class='sidepanel_content zi3 right' id='modct1'>
+            <button class='primary_red right ta_center mod_close_btn' onclick='closeside1();'>X</button>
+            <br><br><br><br>
+            <div class='page_container'>
+                <a href='../index.php'><div class='large12 panel_item'>Home</div></a>
+                <a href='https://news.google.com/?hl=en-IN&gl=IN&ceid=IN:en'><div class='large12 panel_item'>G News</div></a>
+            </div>
+        </div>
+    </div>
 </body>
 ";
 
 
-$myfile = fopen("{$page_title}_{$page_name}_{$date}.html", "w") or die("Unable to open file!");
+$myfile = fopen("./articles/{$page_title}_{$page_name}_{$date}.html", "w") or die("Unable to open file!");
 fwrite($myfile, $text);
 fclose($myfile);
 

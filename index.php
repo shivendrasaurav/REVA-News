@@ -30,7 +30,7 @@
     <body>
 
     <div id="content">
-            <div class="primary_inverted pivot_container column large12 medium12 small12 zi2" style="position: fixed; width: 99%;">
+            <div class="primary_inverted column large10 medium10 small12 center zi2">
 
                 <a class="pivot_button" style="font-size: 28px;" href="index.php">
                     <img src="logo_reva.png" style="width: 40px; height: 40px; margin: -10px; margin-left: 5px;"/>
@@ -41,61 +41,18 @@
                 </button>
 
                 </div>
-                <br><br><br><br>    
-                <div class="fsbg parallax" id="home">
+                <div class="fsbg center column large10 medium10 small12 parallax" id="home">
 
                     <div class="iam" style="margin-top: 100px; color: #FFF;">
                         <h1 class="anim1">REVA NEWS</h1>
                         <h3 class="anim2">Expanding New Horizons</h3>
                     </div>
                 </div>
-                <div class=" page_container column large10 medium10 small12 center">
+                <div class="column large10 medium10 small12 center">
                     <h5>Latest Articles</h5>
                     <br><br>
 
                     <p style='display: none'>After This</p> 
-
-                    <div class='zi2 column large3 medium3 small12 left' style='margin: 10px;'>
-<a class='tab' href='./Web_Developer_Shivendra_Saurav_2019-11-15.html'>
-    <div>
-        <img class='thumb' src='./img_upload/Logo_1080p.png'>
-        <br><br>
-        <span style='font-size: 28px; font-weight: 500'>Web Developer</span> 
-        <br> 
-        Shivendra Saurav, 2019-11-15
-    </div>
-</a>
-</div>
-
-        <div class='zi2 column large3 medium3 small12 left' style='margin: 10px;'>
-        <a class='tab' href='./This_Algorithm_Can_Remove_the_Water_from_Underwater_Photos,_and_the_Results_are_Incredible_Suhani_Jain_2019-11-14.html'>
-            <div>
-                <img class='thumb' src='./img_upload/The-Sea-thru-method-removes-water-from-underwater-images-Best-viewed-online-for-color.jpg'>
-                <br><br>
-                <span style='font-size: 28px; font-weight: 500'>This Algorithm Can Remove the Water from Underwater Photos, and the Results are Incredible</span> 
-                <br> 
-                Suhani Jain, 2019-11-14
-            </div>
-        </a>
-        </div>
-
-        <div class='zi2 column large3 medium3 small12 left' style='margin: 10px;'>
-        <a class='tab' href='./TEDx_Talk_Josh_Kaufman_Shivendra_Saurav_2019-11-14.html'>
-            <div>
-                <img class='thumb' src='./img_upload/ted.jpg'>
-                <br><br>
-                <span style='font-size: 28px; font-weight: 500'>TEDx Talk Josh Kaufman</span> 
-                <br> 
-                Shivendra Saurav, 2019-11-14
-            </div>
-        </a>
-        </div>
-
-
-
-
-
-
 
 
 
@@ -112,7 +69,7 @@
 
                 </div>
                 <br><br>
-                <div class='primary_inverted column large12 medium12 small12' style='width: 100%; margin-top: 30px;'>
+                <div class='primary_inverted column large10 medium10 small12 center'>
                     
                     <br>
                     <div class='column large6 medium6 small12'>
