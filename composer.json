@@ -1,5 +1,13 @@
 {
+    "name": "reva/news",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/shivendrasaurav/REVA-News"
+        }
+    ],
     "require": {
-        "php": "7.0.33"
+        "shivendrasaurav/reva-news": "master",
+        "vendor/php" : "^7.0"
     }
 }
