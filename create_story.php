@@ -172,6 +172,9 @@ $text = "
             <div class='page_container'>
                 <a href='../index.php'><div class='large12 panel_item'>Home</div></a>
                 <a href='https://news.google.com/?hl=en-IN&gl=IN&ceid=IN:en'><div class='large12 panel_item'>G News</div></a>
+                <a href='aboutus.html'><div class='large12 panel_item'>About Us</div></a>
+                <a href='contact.html'><div class='large12 panel_item'>Contact Us</div></a>
+            </div>
             </div>
         </div>
     </div>
