@@ -54,19 +54,6 @@
 
                     <p style='display: none'>After This</p> 
 
-
-
-
-
-
-
-
-
-
-                    
-
-
-
                 </div>
                 <br><br>
                 <div class='primary_inverted column large10 medium10 small12 center'>
